@@ -1,137 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>PEARL IVY</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon"  href="Assets/Images/IMG_9101.PNG"> 
+<html>
+    <head lang="eng" dir="ltr">
+<title> Pearl Ivy</title>
+<meta charset="utf-8">
+<meta name="http-equiv">
+<meta name="viewport" content="width=device-width,inital-scale=1.0">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
- 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-  <link href=Assets/Css/index.css rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Amiko|Alex brush|Sofia" rel="stylesheet">
-<style>  
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
+crossorigin="anonymous">
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amiko|Alex brush|Sofia" rel="stylesheet">
+<link rel="icon"  href="assets/images/IMG_9101.PNG"> 
+<style>
+
+  .bg-image{ background-image:url('assets/images/IMG_9059.JPG');height: 500px;
+  background-repeat:no-repeat;
+/*Add the blur effect*/
+filter:blur(8px);
+-webkit-filter: blur(8px);}
+/* Position text in the middle of the page/image */
+
+.text {
+  color: white;
+  font-weight: bold;
+  border: 0px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+  @media screen  and (max-width:800px)
+  {
+      .bg-image{
+        border:solid #fff 4px;
+        height:100vh;
+        background-size:cover;
+
+      }
+  }
+      
+  .casing{font-size:25px;
+         
+            width:15%;height:200px;
+            display:inline-block;
+        padding:20px;
+vertical-align: middle;
+line-height: 1.5;
+        color:#000;}
+
+@media screen and (max-width:900px)
+{
+
+.casing{width:40%;margin:10px;}
+}
+
+
+@media screen and (max-width:700px){
+
+
+.casing{width:87%;}
+}
 
 
 .enquires{font: size 22px; ;font-family:Sofia; color:black}
-</style>
+
+.dropdown-menu{
+    background-color: black;}
+
+
+    #writing{
+    color:white;
+  }
+    
+    #navbarDropdownMenuLink{
+    color:white;
+  }
+
+
+    .it_em{
+      color: white ;
+    }
+
+
+  </style>
 
 </head>
+
 <body>
-  
-  
-  
-    
-    <!-- Navigation Section -->
+
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/IMG_9101.PNG" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          </a>
+          <a class="navbar-brand" href="#">Pearl Ivy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html ">HOME
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Service.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  SERVICES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item it_em" href="#">WEDDING</a></li>
+                  <li><a class="dropdown-item  it_em" href="#">POST-WEDDING</a></li>
+                  <li><a class="dropdown-item  it_em" href="#">EVENTS PLANNER</a></li>  
+                  <li><a class="dropdown-item  it_em" href="#">TRAVEL </a></li>
+                  <li><a class="dropdown-item  it_em" href="#"> CORPRATE EVENTS</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Gallery.html" id="writing">GALLERY</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Contact.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CONTACT
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item  it_em" href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 1rem;"></i></a></li> 
+                  <li><a class="dropdown-item  it_em" href="https://www.instagram.com/"> <i class="bi bi-instagram"  style="font-size: 1rem;"></i></a></li>
+                  <li><a class="dropdown-item  it_em" href="https://www.facebook.com/"><i class="bi bi-facebook" style="font-size: 1rem;"></i></a></li>
+              
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+
+<!-- Background image -->
+<div
+class="bg-image">  </div><div class=text><h1>NIGERIA'S FIRST</h1>
+  <div class="break"style="font-size:x-small">______</div>
+  <span class="break02" style="font: size 22px; ;font-family:Amiko">Say Goodbye To Nerve Wracking Planning-Let Us Do The Rest</span>
+</div>
+<div style="border: solid 0px black;
+text-align: center;
+font-size:x-large;
+padding: 2px 4px;
+margin: 2px 4px;
+background-color: #ffffffea;
+"> 
+Your <b style=" font-family: 'Great Vibes', cursive;"> Luxury</b> Planners For
+</div>
+
+<div style="text-align:center;">
+
+<div id="casing" class="casing"style="background-color:#FAF5EF;">
+  WEDDING
  
-    <nav class="navbar navbar-dark fixed-top bg-dark" aria-label="navigation section">
-      <div class="container-fluid">
-        <img src="Assets/Images/IMG_9101.PNG" alt="" width="30" height="25" class="d-inline-block align-text-top move">
-  <ul class="nav nav-tabs justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="">HOME</a>
-    </li>
+
+</div>
+
+<div id="casing" class="casing"style="background-color:#FFFFF7;">
+  POST-WEDDING SHOOT
+
+</div> 
+
+
+<div id="casing" class="casing"style="background-color:#f5f2ee">
+  EVENTS PLANNER 
+     
+</div> 
+
+<div id="casing" class="casing" style="background-color:#f7f7f6">
+  TRAVEL
+</div>
+
+<div id="casing" class="casing"style="background-color:#f7f7f6; display:in">
+  CORPRATE EVENTS
   
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="true">
-      SERVICES</a>
-      <ul class="dropdown-menu" aria-labelledby="dropdown01">
-      <li><a class="dropdown-item" href="#">WEDDING</a></li>
-      <li><a class="dropdown-item" href="#">Post-Wedding</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul></li>
-  
-      <li class="nav-item">
-        <a class="nav-link" href=""><font color="white">GALLERY</font></a>
-      </li>
-  
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="true">
-      CONTACT</a>
-      <ul class="dropdown-menu" aria-labelledby="dropdown01">
-      <li><a class="dropdown-item" href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 1rem; color: white;"></i></a></li> 
-      <li><a class="dropdown-item" href="https://www.instagram.com/"> <i class="bi bi-instagram"  style="font-size: 1rem; color: white;"></i></a></li>
-      <li><a class="dropdown-item" href="https://www.facebook.com/"><i class="bi bi-facebook" style="font-size: 1rem; color: white;"></i></a></li>
-  
-      </ul></li>
-  </ul></div></nav>
+</div>
+
+
+<center>  
+  <div class="row featurette">
+    <div class="col-md-5">
+      <img src="assets/Images/IMG_9386.JPG" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" 
+      role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="true"><title>Placeholder</title><rect width="100%" 
+      height="100%" fill="#eee"/></svg>
+
+    </div>
+    <div class="col-md-7"><center>
     
-    <!-- Image and comtent within -->
-    
-    <div class="images"></div>
-    <div class=text><h1>NIGERIA'S FIRST</h1>
-        <div class="break"style="font-size:x-small">______</div>
-        <span class="break02" style="font: size 22px; ;font-family:Amiko">Say Goodbye To Nerve Wracking Planning-Let Us Do The Rest</span>
-    </div> 
- </div>
- <div style="border: solid 0px black;
- text-align: center;
- font-size:x-large;
- padding: 2px 4px;
- margin: 2px 4px;
- background-color: #ffffffea;
- "> 
-     Your <b style=" font-family: 'Great Vibes', cursive;"> Luxury</b> Planners For
- </div>
- 
- 
+      <h2 class="featurette-heading">WELCOME!</h2>
+      <p class="lead">
+        Pearl Ivy has speacialized in event planning in the greater Calarbar area since 2000.
+        we work hard for each of our clients, helping them plan and host thier upcoming event
+        free of stress and with confidence.Whether planning a magnificent Wedding or an  
+        entertaning Corprate event, Pearl Ivy has got you covered.Get in touch to know more about our services.</p></center>
+    </div>
    
-    <!-- table of service -->    
-<center>
-  <table style="border: solid 0px black; width:100%;
-  height: 250px;">
-           <tr>      
-    <td class="edit" style="background-color:#FAF5EF;">
-    WEDDING
-  <br>____________</td>
-  
-  <td class="edit" style="background-color:#FFFFF7;">
-   POST-WEDDING SHOOT
-    <br>____________</td>
-  
-  <td class="edit" style="background-color:#f5f2ee">
-      EVENTS PLANNER 
-       <br>____________</td>
-  
-       <td class="edit"  style="background-color:#f7f7f6">
-       TRAVEL
-        <br>____________</td>   
-  
-       <td class="edit"> 
-      CORPRATE EVENTS
-        <br>____________</td></tr> 
-  </table></center>
-    <!-- Welcome section-->    
+  </div>   
+</center>    
 
-    <center>  
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img src="Assets/Images/IMG_9386.JPG" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" 
-          role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="true"><title>Placeholder</title><rect width="100%" 
-          height="100%" fill="#eee"/></svg>
-    
-        </div>
-        <div class="col-md-7"><center>
-        
-          <h2 class="featurette-heading">WELCOME!</h2>
-          <p class="lead">
-            Pearl Ivy has speacialized in event planning in the greater Calarbar area since 2000.
-            we work hard for each of our clients, helping them plan and host thier upcoming event
-            free of stress and with confidence.Whether planning a magnificent Wedding or an  
-            entertaning Corprate event, Pearl Ivy has got you covered.Get in touch to know more about our services.</p></center>
-        </div>
-       
-      </div>   
-    </center>             
-
-
-    
-          
+         
 <center >
   <div  style="border: 0px solid black; background-color:#FFFFF0;" >
    <h5 class="enquires"> FOR ENQUIRES</h5>
@@ -180,46 +263,38 @@
   
     </div>
   
-  <div class="form-check mb-3">
-    <label class="form-check-label">
-  
-      <input class="form-check-input" type="checkbox"
-      name="remember">Remember me
-    </label></div>
    <div>
   <button type="submit" class="btn btn-primary" > 
     submit</button></div>
      </form>   
   </div>
-  
+
+
+
     
-  </center>
+  <div class="b-example-divider"></div>
   
-    <div class="b-example-divider"></div>
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        
+        <span class="text-muted">Copyright &copy; 2022 Pearl Ivy</span>
+      </div>
   
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-          <link rel="icon"  href="Assets/Images/IMG_9101.PNG"> 
-          <span class="text-muted">Copyright &copy; 2022 Pearl Ivy</span>
-        </div>
-    
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-          <li class="ms-3"><a class="text-muted" href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 1rem; color: black;"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/"> <i class="bi bi-instagram"  style="font-size: 1rem; color:black;"></i></a></li>
-          <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/"><i class="bi bi-facebook" style="font-size: 1rem; color:black;"></i></a></li>
-        </ul>
-      </footer>
-    </div>
-      
-    
-      </body>
-      
-       
-      
-      </html>
-   
-    </body>
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="https://www.twitter.com"><i class="bi bi-twitter" style="font-size: 1rem; color: black;"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/"> <i class="bi bi-instagram"  style="font-size: 1rem; color:black;"></i></a></li>
+        <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/"><i class="bi bi-facebook" style="font-size: 1rem; color:black;"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
 
 
 
